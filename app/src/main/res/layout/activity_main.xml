@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hertz Calculator"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"/>
+
+    <EditText
+        android:id="@+id/tempoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter tempo (BPM)"
+        android:inputType="numberDecimal"
+
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp" />
+
+    <Spinner
+        android:id="@+id/beatSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempoEditText"
+        android:layout_marginTop="8dp"
+        android:entries="@array/beat_array"
+
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/beatSpinner"
+        android:layout_marginTop="22dp"
+
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="Calculate"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Instagram logo -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/dividerLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/spotifyLogo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-16dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_marginBottom="3dp"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/spotifyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/spotifyLogo"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="-24dp"
+            android:text="EGZIX"
+            android:textColor="#000000"
+            android:onClick="onSpotifyClicked"/>
+
+        <ImageView
+            android:id="@+id/spotifyLogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="-5dp"
+            android:elevation="8dp"
+            android:src="@drawable/spotify_logo"
+            android:onClick="onSpotifyClicked"/>
+
+        <TextView
+            android:id="@+id/instagramLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/instagramLogo"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="128dp"
+            android:layout_marginBottom="-17dp"
+            android:text="its_egzix"
+            android:textColor="#000000"
+            android:onClick="onInstagramClicked"/>
+
+        <ImageView
+            android:id="@+id/instagramLogo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/instgram_logo"
+            android:elevation="8dp"
+            android:onClick="onInstagramClicked"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

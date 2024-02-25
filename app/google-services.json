@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "316664575216",
+    "project_id": "beat-to-hertz",
+    "storage_bucket": "beat-to-hertz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316664575216:android:0fd53c0ce6ba32fd84be35",
+        "android_client_info": {
+          "package_name": "com.example.hertz_calculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8IUPGLatRnkUzMoD9kIlfaj6sGMQxjtU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

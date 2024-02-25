@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="beat_array">
+        <item>1/128</item>
+        <item>1/64</item>
+        <item>1/32</item>
+        <item>1/16</item>
+        <item>1/8</item>
+        <item>1/4</item>
+        <item>1/2</item>
+    </string-array>
+</resources>
